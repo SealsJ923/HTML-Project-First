@@ -1,0 +1,408 @@
+/* Global reset to remove default margins and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sets the background image, font, and default styles for the entire page */
+body {
+    background: url("image/Ocean.jpg") no-repeat fixed;
+    background-size: cover;
+    background-color: #9ea09c;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Defines the header style, including alignment and font size */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.5em;
+    background-color: #1bdaaa;
+    color: #0f0f0f;
+    padding: 20px;
+}
+
+/* Styles the navigation bar, including background color and layout */
+nav {
+    background-color: #333;
+    font-family: "Times New Roman", Times, serif;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styles the navigation links, including padding and hover effects */
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+.custom-h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #0f0f0f;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Styles the main heading with customized text properties */
+.custom-h2 {
+    font-size: 2em;
+    color: #0f0f0f;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Ensures clickable heading links retain consistent styling */
+.custom-h2 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Changes heading link color on hover */
+.custom-h2 a:hover {
+    color: #1bdaaa;
+}
+
+/* Styles the logo, adjusting its size */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Centers the header title and maintains proper spacing */
+.header-title {
+    flex: 1;
+    text-align: center;
+    margin-right: 80px;
+}
+
+/* Styles dropdown navigation menus */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styles dropdown menu content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Styles dropdown menu links */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    font-size: 1em;
+}
+
+/* Changes background color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Displays dropdown menu content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Moves the hero text down slightly for better alignment */
+.hero-text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.8em;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+/* Container to hold image and text */
+.content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Styles images inside the content container, adding rounded corners and shadows */
+.content-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles text content related to images */
+.fish-text {
+    font-family: "Times New Roman", Times, serif;
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Defines styles for ordered and unordered lists */
+.knot-list,
+.tackle-list {
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+/* Styles list items inside knot and tackle lists */
+.knot-list li,
+.tackle-list li {
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 5px;
+}
+
+/* Defines the appearance of embedded YouTube videos, including size and border styling */
+.knot-video {
+    width: 40%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.gallery-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* Styles for the table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Table header styling */
+.styled-table thead {
+    background-color: #1bdaaa;
+    color: #0f0f0f;
+    font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Alternating row colors for better readability */
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+/* Hover effect on rows */
+.styled-table tbody tr:hover {
+    background-color: #d6f5e3;
+    cursor: pointer;
+}
+
+/* Responsive table container */
+.table-container {
+    width: 100%;
+    overflow-x: auto; 
+    margin: 20px 0;
+}
+
+
+/* Form Container */
+form {
+    background-color: rgba(255, 255, 255, 0.9); 
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: grid;
+    gap: 15px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+/* Inputs & Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Textarea Styling */
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #1bdaaa;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold; 
+}
+
+input[type="submit"]:hover {
+    background-color: #16b593;
+}
+
+/* Applies responsive design changes for smaller screens, adjusting layout and element sizes */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-image {
+        width: 80%;
+    }
+
+    .fish-text,
+    .knot-list,
+    .tackle-list {
+        width: 100%;
+    }
+
+    .knot-video {
+        width: 80%;
+    }
+
+    .gallery-image {
+        max-width: 80%;
+    }
+    .styled-table {
+        font-size: 14px; 
+        width: 100%;
+    }
+
+    .styled-table th, .styled-table td {
+        padding: 10px;
+    }
+    header {
+        flex-direction: column; 
+        text-align: center;
+        padding: 15px;
+    }
+
+    .header-title {
+        font-size: 2em; 
+        margin-right: 0; 
+    }
+
+    .logo {
+        width: 80px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .styled-table {
+        font-size: 12px;
+    }
+
+    .styled-table th, .styled-table td {
+        padding: 8px;
+    }
+    .header-title {
+        font-size: 1.8em; 
+    }
+
+    .logo {
+        width: 60px; 
+    }
+    form {
+            width: 90%;
+            padding: 15px;
+        }
+}
+
+
+/* Styles the footer, including background color and text formatting */
+footer {
+    background-color: #1bdaaa;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    border-top: 2px solid #8c3826;
+}
+
+/* Adds spacing and formatting to paragraph elements */
+p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* Defines a wrapper to contain all content, setting max width and centering it */
+#wrapper {
+    width: 90%;
+    max-width: 1280px;
+    box-shadow: 5px 5px 5px #828282;
+    background-color: #f5f1f1;
+    margin: 10px auto;
+    padding: 0px;
+}
+
+/* Defines the hero section with a background image */
+#homehero {
+    width: 100%;
+    min-height: 500px;
+    background: url("image/TarponJump.jpg") no-repeat center center;
+    background-size: cover;
+}

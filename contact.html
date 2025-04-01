@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch'em All</title>
+    <link rel="stylesheet" href="project.css" /> <!-- Links external CSS file -->
+</head>
+
+<body>
+    <div id="wrapper"> <!-- Main wrapper for page layout -->
+        <header> <!-- Page header with logo and title -->
+            <img src="image/fishlogo.png" alt="Fish Logo" class="logo" />
+            <h1 class="header-title">Catch'em All</h1>
+        </header>
+        <nav> <!-- Navigation bar -->
+            <a href="index.html">Home</a> &nbsp;
+            <a href="top3species.html">Top 3 Species</a> &nbsp;
+            <!-- Dropdown for Tackle -->
+            <div class="dropdown">
+                <a href="knots.html">Knots ▾</a>
+                <div class="dropdown-content">
+                    <a href="tackle.html">Tackle</a>
+                </div>
+            </div>
+            &nbsp;
+            <!-- Dropdown for How To Catch -->
+            <div class="dropdown">
+                <a href="howtocatch.html">How To Catch ▾</a>
+                <div class="dropdown-content">
+                    <a href="fishlocation.html">Fish Location</a>
+                </div>
+            </div>
+            &nbsp;
+            <a href="gallery.html">Gallery</a>
+            &nbsp;
+            <a href="contact.html">Contact</a>
+        </nav>
+        <main> <!-- Main content area -->
+        <h1 class="custom-h2">Contact us</h1>
+        <form method="post"
+        action="https://webdevbasics.net/scripts/demo.php">
+        <label for="myName">Name:</label>
+        <input type="text" name="myName" id="myName"
+         required placeholder="your first and last name">
+        <label for="myEmail">E-mail:</label>
+        <input type="email" name="myEmail" id="myEmail"
+         required placeholder="you@yourdomain.com">
+        <label for="myComments">Comments:</label>
+         <textarea name="myComments" id="myComments" rows="2" cols="20"
+            required></textarea>
+        <input id="mySubmit" type="submit" value="Submit">
+</form>
+        </main>
+        <footer> <!-- Footer section -->
+            Copyright &copy; 2025 Catch'em All<br />
+        </footer>
+    </div>
+</body>
+
+</html>
