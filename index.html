@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch'em All</title>
+    <link rel="stylesheet" href="project.css" /> <!-- Links external CSS file -->
+</head>
+
+<body>
+    <div id="wrapper"> <!-- Main wrapper for page layout -->
+        <header> <!-- Page header with logo and title -->
+            <img src="image/fishlogo.png" alt="Fish Logo" class="logo" />
+            <h1 class="header-title">Catch'em All</h1>
+        </header>
+        <nav> <!-- Navigation bar -->
+            <a href="index.html">Home</a> &nbsp;
+            <a href="top3species.html">Top 3 Species</a> &nbsp;
+            <!-- Dropdown for Tackle -->
+            <div class="dropdown">
+                <a href="knots.html">Knots ▾</a>
+                <div class="dropdown-content">
+                    <a href="tackle.html">Tackle</a>
+                </div>
+            </div>
+            &nbsp;
+            <!-- Dropdown for How To Catch -->
+            <div class="dropdown">
+                <a href="howtocatch.html">How To Catch ▾</a>
+                <div class="dropdown-content">
+                    <a href="fishlocation.html">Fish Location</a>
+                </div>
+            </div>
+            &nbsp;
+            <a href="gallery.html">Gallery</a>
+            &nbsp;
+            <a href="contact.html">Contact</a>
+        </nav>
+        <main> <!-- Main content area -->
+            <div id="homehero"></div> <!-- Hero section -->
+            <h2 class="hero-text">
+                What it takes to catch the Top 3 fish species in Georgia
+            </h2>
+            <p>
+                It&#39;s all about
+                knowing where to find them, which tackle works best, tying the
+                strongest knots, and using the correct techniques to trick them into
+                biting!
+            </p>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th id="Species">Fish Species</th>
+                        <th id="Season">Best Season</th>
+                        <th id="Tackle">Recommended Tackle</th>
+                        <th id="Location">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="Species">Largemouth Bass</td>
+                        <td headers="Season">Spring & Fall</td>
+                        <td headers="Tackle">Spinnerbaits, Jigs</td>
+                        <td headers="Location">Lake Lanier</td>
+                    </tr>
+                    <tr>
+                        <td headers="Species">Tarpon</td>
+                        <td headers="Season">Spring & Summer</td>
+                        <td headers="Tackle">Live Bait, Swimbaits</td>
+                        <td headers="Location">Georgia Coast</td>
+                    </tr>
+                    <tr>
+                        <td headers="Species">Redfish</td>
+                        <td headers="Season">Summer</td>
+                        <td headers="Tackle">Live Bait, Spoons</td>
+                        <td headers="Location">Georgia Coast</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="custom-index-h2">How to Locate and Catch the Top 3</h2>
+            <details class="fish-details">
+                <summary class="fish-summary">Tarpon</summary>
+                <p class="fish-description">
+                    Tarpon (<em>Megalops atlanticus</em>) are prized sport fish known for their strength, size, and
+                    acrobatic jumps. Found in warm coastal waters and estuaries, top fishing spots include Florida, the
+                    Gulf of Mexico, Central America,
+                    and West Africa. The best time to fish for tarpon is from April to October, especially at dawn or
+                    dusk and during incoming tides.
+                    Anglers use heavy tackle with live bait or lures, employing techniques like drift fishing, sight
+                    casting, and fly fishing. When hooked,
+                    tarpon often leap—requiring anglers to <strong>“Bow to the King”</strong> by lowering the rod to
+                    avoid breaking the line. As a protected species, they should be handled carefully and
+                    released properly.
+                </p>
+            </details>
+            <details class="fish-details">
+                <summary class="fish-summary">largemouth Bass</summary>
+                <p class="fish-description">
+                    Largemouth Bass (<em>Micropterus salmoides</em>) are popular freshwater game fish found in lakes,
+                    ponds, rivers, and reservoirs, especially around vegetation, structures, and drop-offs.
+                    They are most active during early mornings, late evenings, and in spring—especially during spawning
+                    season.
+                    Effective gear includes a medium-heavy rod with a spinning or baitcasting reel and 10 to 20 lb line.
+                    Both live bait (like shiners and nightcrawlers) and artificial lures (such as plastic worms,
+                    crankbaits, and spinnerbaits) work well. Successful techniques include Texas rigging, skipping jigs,
+                    and working lures near cover. Using sonar and watching for surface activity can help locate feeding
+                    bass. Catch-and-release is encouraged for conservation.
+                </p>
+            </details>
+            <details class="fish-details">
+                <summary class="fish-summary">Red Drum</summary>
+                <p class="fish-description">
+                    Red Drum (Sciaenops ocellatus), or Redfish, are powerful saltwater game fish commonly found in
+                    shallow coastal waters, including estuaries, marshes, tidal creeks, grass flats, and near beaches or
+                    jetties.
+                    They prefer 1–4 feet of water with access to deeper channels.
+                    The best times to catch red drum are during spring and fall, especially on high or moving tides, and
+                    around dawn or
+                    dusk when they are most active. Productive techniques include sight fishing for tailing redfish on
+                    the flats, bottom fishing with cut bait near structures, and
+                    casting artificial lures along grass lines and oyster beds. Known for their aggressive strikes and
+                    long runs, red drum offer an exciting challenge.
+                    Many states enforce slot size limits (typically 18–27 inches) to protect breeding fish, so
+                    catch-and-release is encouraged for larger bull redfish to support population health.
+                </p>
+            </details>
+        </main>
+        <footer> <!-- Footer section -->
+            Copyright &copy; 2025 Catch'em All<br />
+        </footer>
+    </div>
+</body>
+
+</html>
