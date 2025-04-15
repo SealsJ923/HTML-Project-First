@@ -39,25 +39,31 @@
             &nbsp;
             <a href="products.html">Products</a>
         </nav>
-        <main> <!-- Main content area -->
-        <h1 class="custom-h2">Contact us</h1>
-        <form method="post"
-        action="https://webdevbasics.net/scripts/demo.php">
-        <label for="myName">Name:</label>
-        <input type="text" name="myName" id="myName"
-         required placeholder="your first and last name">
-        <label for="myEmail">E-mail:</label>
-        <input type="email" name="myEmail" id="myEmail"
-         required placeholder="you@yourdomain.com">
-        <label for="myComments">Comments:</label>
-         <textarea name="myComments" id="myComments" rows="2" cols="20"
-            required></textarea>
-        <input id="mySubmit" type="submit" value="Submit">
+        <main>
+            <h1 class="custom-h2">Our Products</h1>
+            
+            <div class="product-container">
+                <!-- First Product -->
+                <div class="item-product">
+                    <img src="image/stella.png" alt="Shimano Stella Fishing Reel">
+                    <h3>Shimano Stella 10000</h3>
+                    <p> Stella SW features a Hagane body which boasts a highly rigid metal construction. 
+                        This means improved impact resistance and less body flex. At the heart of the reel, state of the art Hagane gears are cold forged for lasting durability and smoothness. 
+                        Infinity Drive Technology offers an improved winding experience, optimizing winding torque by 26%.</p>
+                    
+                    <!-- PayPal Buy Now Button for Shirt -->
+                    <form method="post"
+    action="https://webdevbasics.net/cart.html">
+    <input type="submit" value="Add to Cart">
 </form>
+                </div>
+                <!-- Add more products here following the same structure -->
+            </div>
         </main>
-        <footer> <!-- Footer section -->
+          
+          <footer> <!-- Footer section -->
             Copyright &copy; 2025 Catch'em All<br />
-        </footer>
+          </footer>
     </div>
 </body>
 

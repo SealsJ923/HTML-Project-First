@@ -341,7 +341,121 @@ input[type="submit"]:hover {
 .fish-details[open] {
     background-color: #f8fdfc;
 }
+/* Styles the footer, including background color and text formatting */
+footer {
+    background-color: #1bdaaa;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    border-top: 2px solid #8c3826;
+}
 
+/* Adds spacing and formatting to paragraph elements */
+p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* Defines a wrapper to contain all content, setting max width and centering it */
+#wrapper {
+    width: 90%;
+    max-width: 1280px;
+    box-shadow: 5px 5px 5px #828282;
+    background-color: #f5f1f1;
+    margin: 10px auto;
+    padding: 0px;
+}
+
+/* Defines the hero section with a background image */
+#homehero {
+    width: 100%;
+    min-height: 500px;
+    background: url("image/TarponJump.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Styles for the products section */
+.item-product {
+    background-color: #020504;
+    color: #fff;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item-product img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.item-product h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.item-product p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+}
+
+.item-product form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-product input[type="submit"] {
+    background-color: #1bdaaa;
+    padding: 12px 20px;
+    color: rgb(5, 5, 5);
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.item-product input[type="submit"]:hover {
+    background-color: #16b593;
+}
+
+/* To add a gap between multiple products */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Product image styling */
+.product-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
 /* Applies responsive design changes for smaller screens, adjusting layout and element sizes */
 @media (max-width: 768px) {
     .content-container {
@@ -388,6 +502,22 @@ input[type="submit"]:hover {
     .logo {
         width: 80px; 
     }
+    .item-product {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .item-product h3 {
+        font-size: 1.3em;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .item-product img {
+        max-width: 200px;
+    }
 }
 
 
@@ -410,43 +540,15 @@ input[type="submit"]:hover {
             width: 90%;
             padding: 15px;
         }
-}
-
-
-/* Styles the footer, including background color and text formatting */
-footer {
-    background-color: #1bdaaa;
-    font-size: small;
-    font-style: italic;
-    text-align: center;
-    padding: 1em;
-    border-top: 2px solid #8c3826;
-}
-
-/* Adds spacing and formatting to paragraph elements */
-p {
-    margin-top: 20px;
-    font-size: 20px;
-    line-height: 1.5;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-/* Defines a wrapper to contain all content, setting max width and centering it */
-#wrapper {
-    width: 90%;
-    max-width: 1280px;
-    box-shadow: 5px 5px 5px #828282;
-    background-color: #f5f1f1;
-    margin: 10px auto;
-    padding: 0px;
-}
-
-/* Defines the hero section with a background image */
-#homehero {
-    width: 100%;
-    min-height: 500px;
-    background: url("image/TarponJump.jpg") no-repeat center center;
-    background-size: cover;
+        .item-product {
+            width: 90%;
+        }
+    
+        .item-product h3 {
+            font-size: 1.2em;
+        }
+    
+        .item-product p {
+            font-size: 0.9em;
+        }
 }
