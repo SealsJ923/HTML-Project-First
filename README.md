@@ -4,7 +4,7 @@ This is a website deticated to teaching someone how to catch 3 of the most desir
 Added Summary Widgit<br>
 Fixed double gallary nav<br>
 Added Products page<br>
-Added mete name descriptions<br>
+Added meta name descriptions<br>
 INSTALL DIRECTIONS -
 The images (jpg and png) must be taken and put into a folder named image in order to be able to see the photos within the website.<br>
 
