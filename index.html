@@ -104,7 +104,7 @@
                 </p>
             </details>
             <details class="fish-details">
-                <summary class="fish-summary">largemouth Bass</summary>
+                <summary class="fish-summary">Largemouth Bass</summary>
                 <p class="fish-description">
                     Largemouth Bass (<em>Micropterus salmoides</em>) are popular
                     freshwater game fish found in lakes, ponds, rivers, and reservoirs,
@@ -142,9 +142,17 @@
         </main>
         <footer>
             <!-- Footer section -->
-            Copyright &copy; 2025 Catch'em All<br />
+            <p>Copyright &copy; 2025 Catch'em All</p>
+            <p>Contact me: <a href="mailto:Sealsj923@gmail.com">Sealsj923@gmail.com</a></p>
+            <p id="date"></p>
         </footer>
     </div>
+    <!--Script section-->
+    <script>
+        window.onload = function() {
+            alert("Welcome to my page!");
+            document.getElementById("date").innerHTML = "Today's date is " + new Date().toLocaleDateString();
+        };
+    </script>
 </body>
-
 </html>
